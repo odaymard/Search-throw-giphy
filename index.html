@@ -8,22 +8,29 @@
 
 </head>
 
-<body background color =red>	
+<body >	
+
+
 <ul class="navigation">
   <li><a href="#">Home</a></li>
   <li><a href="#">About</a></li>
   <li><a href="#">Products</a></li>
   <li><a href="#">Contact</a></li>
 </ul>
+
+
 <div>
-<input type=submit   value="search" onclick="CallApi()" class="subbtn"/>
-<input type=text class="subbtn" id="txtsearch"/>
+
+<input type=button value="search" onclick="CallApi()" class="subbtn"/>
+
+<input type=text class="subbtn" id="txtsearch" onkeypress="handle(event)"/>
 
 </div>
+
+
 <ul class="flex-container">
 
- 
-</ul>
+
 
 	
 </body>
