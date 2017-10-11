@@ -1,0 +1,39 @@
+
+.flex-container {
+  padding : 0;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  height:1300px;
+  width:1200px;
+  background-color: white-space;
+  flex-flow :  row wrap;
+  justify-content: center
+
+}
+.subbtn {
+	 display: flex;
+     padding : 0;
+     margin: auto;
+     flex-flow :  row wrap;
+     justify-content: center
+	}
+
+.flex-item {
+    background-color: green;
+    width: 330px;
+    height: 312px;
+    margin: 10px;
+}
+
+.navigation {
+	display:flex;
+	margin : 0;
+	padding: 0;
+	flex-flow :row wrap;
+	justify-content :space-around;
+}
+
+
+
+	
