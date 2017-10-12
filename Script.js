@@ -9,22 +9,16 @@
    xhttp.send();
    var response = JSON.parse(xhttp.responseText);
    response.data.forEach(function(element){
-     var imgsrch=document.createElement('img');
+     let imgsrch=document.createElement('img');
      imgsrch.setAttribute('src',element.images.downsized.url);
      imgsrch.setAttribute('height',350);
      imgsrch.setAttribute('width',350);
-     var li=document.createElement('li' );
+     let li=document.createElement('li' );
      li.className='flex-item';
      li.appendChild(imgsrch); 
      ul.appendChild(li);
   }
    );
- return response;
-
+return false;
 };
-function handle(e){
- if(e.keyCode === 13){
 
-           CallApi();
-        }
-    }
