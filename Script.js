@@ -14,14 +14,14 @@
    xhttp.send();
    let response = JSON.parse(xhttp.responseText);
    response.data.forEach(function(element){
-    let imgsrch=document.createElement('img');
-    imgsrch.setAttribute('src',element.images.downsized.url);
-    imgsrch.setAttribute('height',350);
-    imgsrch.setAttribute('width',350);
-    let li=document.createElement('li' );
-    li.className='flex-item';
-    li.appendChild(imgsrch); 
-    ul.appendChild(li);
+   let imgsrch=document.createElement('img');
+   imgsrch.setAttribute('src',element.images.downsized.url);
+   imgsrch.setAttribute('height',350);
+   imgsrch.setAttribute('width',350);
+   let li=document.createElement('li' );
+   li.className='flex-item';
+   li.appendChild(imgsrch); 
+   ul.appendChild(li);
   }
    );
  return false; // to prevent page reloading 
