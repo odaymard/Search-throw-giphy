@@ -14,14 +14,14 @@
    xhttp.send();
    let response = JSON.parse(xhttp.responseText);
    response.data.forEach(function(element){
-     let imgsrch=document.createElement('img');
-     imgsrch.setAttribute('src',element.images.downsized.url);
-     imgsrch.setAttribute('height',350);
-     imgsrch.setAttribute('width',350);
-     let li=document.createElement('li' );
-     li.className='flex-item';
-     li.appendChild(imgsrch); 
-     ul.appendChild(li);
+    let imgsrch=document.createElement('img');
+    imgsrch.setAttribute('src',element.images.downsized.url);
+    imgsrch.setAttribute('height',350);
+    imgsrch.setAttribute('width',350);
+    let li=document.createElement('li' );
+    li.className='flex-item';
+    li.appendChild(imgsrch); 
+    ul.appendChild(li);
   }
    );
  return false; // to prevent page reloading 
@@ -30,12 +30,8 @@
 
 window.addEventListener("scroll", function () {
 	    let ul=document.querySelector('.flex-container');
-        let top = (document.documentElement && document.documentElement.scrollTop) || 
-              document.body.scrollTop;		
-	if  ((top+ window.innerHeight >=document.querySelector('.flex-container').scrollHeight) &(ul.childNodes.length>1)){
-          
-	  
-
-     	CallApi(false); // callapi with parameter false it means it was not submited 
-	}
+            let top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;		
+	    if  ((top+ window.innerHeight >=document.querySelector('.flex-container').scrollHeight) &(ul.childNodes.length>1)){
+              CallApi(false); // callapi with parameter false it means it was not submited 
+	     }
 }, false);
