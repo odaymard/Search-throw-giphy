@@ -1,23 +1,26 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="stylesheet" type="text/css" href="c.css">
-<script src="script.js">  </script>
+  <meta charset="UTF-8">
+  <title>giphy search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="indexstyle.css"/>
+  <script src="script.js">
+  </script>
 </head>
+
 <body >	
-<div class="divapp">
-<div class="formdiv">
+  <div class="divapp">
+    <div class="formdiv">
+      <form action=""  method="post" onsubmit="return CallApi(true);" >
+        <input type="submit" value="search"  name="btntosearch"  class="subbtn"/>
+        <input type="text" class="subbtn" id="txtsearch" name="txttosearch" />
+      </form>
 
-<form action=""  method="post" onsubmit="return CallApi(true);" >
-<input type=submit value="search"  name="btntosearch"  class="subbtn"/>
-<input type=text class="subbtn" id="txtsearch" name="txttosearch" />
-</form>
-
-</div>
-<div class="uldiv">
-
-<ul class="flex-container">
-</ul>
-</div>
-</div>	
+     </div>
+     <div class="uldiv">
+       <ul class="flex-container">
+       </ul>
+      </div>
+  </div>	
 </body>
