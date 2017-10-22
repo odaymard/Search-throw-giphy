@@ -6,7 +6,7 @@
   margin: auto;
   list-style: none;
   width: 100%;
-  background-color: white-space;
+  
   flex-flow :  row wrap;
   justify-content: center;
 }
@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 700px) {
   body {
-    background-color: white;
+    background-color: gray;
   }
   
  .flex-container {
@@ -41,7 +41,7 @@
   
 }
 	
-.subbtn {
+.formElement {
      display: flex;
      padding: 0;
      float:top;
