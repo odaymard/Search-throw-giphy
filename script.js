@@ -12,7 +12,7 @@
    
    xhttp.open('GET', 'https://api.giphy.com/v1/gifs/search?q='  +
      gettext.value +
-	 '&api_key=RMyhQ6NDuKnsfix5ARS4pcA7N4kOxTQi&limit=' + 
+	 '&api_key=apikey&limit=' + 
 	 12 +
 	 '&offset=' +
 	 ul.childNodes.length , false);
